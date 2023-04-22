@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-bold text-[3rem] leading-[2rem];
+  }
+  h2 {
+    @apply font-bold text-[2rem] leading-[1.47rem];
+  }
+  h3 {
+    @apply font-bold text-[1rem] leading-[1rem];
+  }
+  body {
+    @apply font-spartan;
+  }
+  input {
+    @apply w-full p-2 border border-grey text-black font-bold;
+  }
+  label {
+    @apply text-grey space-y-4;
+  }
+}
+
+@layer components {
+  .paragraph-medium {
+    @apply leading-[1.125rem] text-[0.81rem] text-grey;
+  }
+  .paragraph-small {
+    @apply leading-[1.06rem] text-[0.81rem] text-grey;
+  }
+}
